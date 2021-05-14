@@ -6,7 +6,7 @@ import EditComponent from './EditComponent';
 
 class NoteList extends Component {
     render() {
-        console.log(this.props.notes)
+     //   console.log(this.props.notes)
         return (
             <div>
                 <h1 className="note_heading">All Notes</h1>
