@@ -1,3 +1,22 @@
+
+const BUY_CAKE = 'BUY_CAKE'
+const BUY_ICECREAM = 'BUY_ICECREAM'
+
+function buyCake () {
+  return {
+    type: BUY_CAKE,
+    info: 'First redux action'
+  }
+}
+
+function buyIceCream () {
+  return {
+    type: BUY_ICECREAM
+  }
+}
+
+
+
 const noteReducer = (state = [], action) => {
     switch (action.type) {
         case 'ADD_NOTE':

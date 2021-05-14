@@ -1,14 +1,14 @@
 import "./App.css";
-import DisplayTodos from "./components/NewNote";
-import Todos from "./components/NoteList";
-import Todos1 from "./components/NoteCount";
+import NewNote from "./components/NewNote";
+import NoteList from "./components/NoteList";
+import NoteCount from "./components/NoteCount";
 function App() {
   return (
     <div className="App">
      
-     <Todos1 />
-        <DisplayTodos />
-        <Todos />
+     <NoteCount />
+        <NewNote />
+        <NoteList />
     </div>
   );
 }

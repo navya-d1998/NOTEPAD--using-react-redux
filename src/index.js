@@ -1,11 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import {createStore} from 'redux';
+import { createStore, applyMiddleware } from 'redux'
 import {Provider} from 'react-redux';
-import noteReducer from './redux/noteReducer'
+import noteReducer from './redux/NoteReducer'
 import App from './App';
-const store = createStore(noteReducer);
+import createLogger  from 'redux-logger';
+
+const reduxLogger = require('redux-logger');
+
+//const createLogger = require(redux-logger);
+
+const store = createStore(noteReducer,applyMiddleware(createLogger ));
 ReactDOM.render(
     <Provider store={store}>
         <App/>
